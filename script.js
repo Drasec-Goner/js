@@ -1,3 +1,5 @@
+
+// Example 1: Function scope and variable redeclaration------------------------------------------------------------------------------------------------
 function exampleFunction()
 {
     if(true)
@@ -16,6 +18,7 @@ exampleFunction();
 // var  = function-level scope
 // let / const = block - level scope
 
+// Example 2: Block scope with let------------------------------------------------------------------------------------------------
 function exampleFunction1()
 {
     if(true)
@@ -30,6 +33,8 @@ function exampleFunction1()
 
 exampleFunction1();
 
+
+// Example 3: Block scope with const------------------------------------------------------------------------------------------------
 function exampleFunction2()
 {
     if(true)
@@ -46,7 +51,8 @@ exampleFunction2();
 
 
 
-//Shadowing
+
+// Example 4: Shadowing with var------------------------------------------------------------------------------------------------
 
 var shadowedVar = "I am global";
 
@@ -60,6 +66,8 @@ exampleFunction3();
 console.log(shadowedVar); // "I am global"
 
 
+
+// Example 5: Shadowing with let------------------------------------------------------------------------------------------------
 let shadowedVar1 = "I am global";
 
 function exampleFunction4()
@@ -71,8 +79,9 @@ function exampleFunction4()
 exampleFunction4();
 console.log(shadowedVar1); // "I am global"
 
-// Hoisting
 
+
+// Example 6: Hoisting------------------------------------------------------------------------------------------------------------
 console.log(x); //undefined
 var x=5;
 console.log(x); // 5
@@ -84,6 +93,9 @@ console.log(y);
 //same for const - doesnt have any default intialization unlike var 
 
 
+
+
+// Example 7: Data Types --------------------------------------------------------------------------------------------------------------
 //Primitive Data Types:
 //Note: Js is a loosely typed language - Doesnt need to say the data type of variable when declaring
 
@@ -112,6 +124,8 @@ console.log(person.name); //Soumya
 let fruits = [1, "banana", "orange"]; // Array
 console.log(fruits[0]);
 
+
+// Example 8: Function ------------------------------------------------------------------------------------------------------------------
 function add(a,b) { //Function with parameters
     return a + b;
 }
@@ -119,6 +133,8 @@ function add(a,b) { //Function with parameters
 var a =add(2,3);
 console.log(a);
 
+
+// Example 9: typeof------------------------------------------------------------------------------------------------------------------------
 //typeof() - says the data type of the variable
 console.log(typeof(str)); 
 
