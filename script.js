@@ -92,7 +92,12 @@ console.log(y);
 
 //same for const - doesnt have any default intialization unlike var 
 
+//Hoisting with functions
+hello(); // "Hello, World!"
 
+function hello() {
+    console.log("Hello, World!");
+}
 
 
 // Example 7: Data Types --------------------------------------------------------------------------------------------------------------
@@ -138,3 +143,18 @@ console.log(a);
 //typeof() - says the data type of the variable
 console.log(typeof(str)); 
 
+// Example 10: Type Coercion----------------------------------------------------------------------------------------------------------------
+let result = 5 + "5"; // Result is the string "55" 
+console.log(result);
+result = 5 + 5; // Result = 4
+console.log(result);
+result = "5" + "5"; // Result = "55"
+console.log(result);
+result = 2 + 2 - 2; // Result = 2
+console.log(result);
+result = "2" + "2" - "2";
+console.log(result); // Result = 20
+result = "5" * "5" / 5;
+console.log(result); // Result = 5
+
+//Version Control: A system that records chnages to a file or set of files over time, so you can 
