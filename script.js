@@ -146,7 +146,7 @@ console.log(typeof(str));
 // Example 10: Type Coercion----------------------------------------------------------------------------------------------------------------
 let result = 5 + "5"; // Result is the string "55" 
 console.log(result);
-result = 5 + 5; // Result = 4
+result = 5 + 5; // Result = 10
 console.log(result);
 result = "5" + "5"; // Result = "55"
 console.log(result);
