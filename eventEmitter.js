@@ -2,7 +2,7 @@ const EventEmitter = require('events');
 // Imports the events module and create an instance of the EventEmitter class
 
 const myEmitter = new EventEmitter();
-// Create an instance of the EventEmitter class. USed to handle events
+// Create an instance of the EventEmitter class. Used to handle events
 
 //on method - Used to register an event listener for a specific events.
 //Multiple listeners can be attached to the same event.
