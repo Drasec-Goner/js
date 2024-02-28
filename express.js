@@ -1,4 +1,5 @@
 const express = require('express');
+// Express is a Node.js framework
 const app = express();
 const port = 3000;
 

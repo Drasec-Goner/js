@@ -9,7 +9,7 @@ const server = http.createServer((req,res)=>{
     if(req.url=='/')
     {
         res.writeHead(200,{'Content-Type':'text/html'});
-        const readableStream = fs.createReadStream('test2.html', {encoding:'utf8'});
+        const readableStream = fs.createReadStream('form.html', {encoding:'utf8'});
         readableStream.pipe(res);
     }
     else if(path.pathname=='/submit')
