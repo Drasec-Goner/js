@@ -22,7 +22,7 @@ const server = http.createServer((req, res) => {
     readStream.pipe(zlib.Gzip()).pipe(res);
 
     readStream.on('error', (err) => {
-        console.error('Erorr reading file:',err);
+        console.error('Error reading file:',err);
         res.statusCode = 500;
         res.end('Internal Server Error');
     });
